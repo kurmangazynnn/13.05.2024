@@ -15,7 +15,7 @@ class Triangle(Color):
 
     def get_perimeter(self):
         print("Perimeter:", self.a)
-
+        
 obj1 = Triangle(color="Green", side1=4, side2=8, side3=12)
 obj1.get_color()
 obj1.get_perimeter()
