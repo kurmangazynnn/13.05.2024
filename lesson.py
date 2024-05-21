@@ -1,11 +1,22 @@
-class Person:
-    def __init__(self,name):
-        self.name=name
-    def get_info(self):
-        print("Аты:",self.name)
+class Animal:
+    def say_hello(self,count):
+        for i in range(0, 7):
+          print("Hello")
 
-class Emplayee(Person):
-    def job (self,job_name):
-        print("Аты:"+ self.name,"Жұмысы:"+job_name)
-Emplayee_obj=Emplayee("Kurmangazy")
-Emplayee_obj.job("programmer")
+class Cat(Animal):
+    def say_hello(self, count):
+        for i in range(0, count):
+           print("may")
+
+class Dog(Animal):
+
+    def say_hello(self, count):
+        hello = 'gaf'
+        for i in range(0, count):
+            print(hello)
+        
+cat = Cat()
+dog = Dog()
+
+cat.say_hello(count=44) 
+dog.say_hello(count=11)
